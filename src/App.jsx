@@ -34,7 +34,9 @@ const App = () => {
         Search
       </button>
 
-      {clients && clients.map((client) => <Client client={client} />)}
+      {status === "show" &&
+        clients &&
+        clients.map((client) => <Client client={client} />)}
     </div>
   );
 };
